@@ -9,7 +9,7 @@ const Home = () => {
        
        <div className='max-w-screen-lg mx-auto flex flex-col items-center 
        justify-center h-full px-4 md:flex-row '>
-          <div className='flex flex-col justify -center h-full h-[16rem] sm h-[10rem]
+          <div className='flex flex-col justify -center h-full h-[14rem] sm h-[10rem]
            '>
             
            <h2 className=' text-4xl sm:text-7xl font bold text-white
@@ -18,7 +18,7 @@ const Home = () => {
            during last week of a every unit using React-JS, Bootstrap, Chakra-UI and   
              CSS for frontend and Node.js, Express and MongoDB for backend. Interested for a position
            Software Developer to enhance my skills and to enhance the user experience.</p>
-           <div>
+           <div href="https://drive.google.com/file/d/1APXaOFoK6Tdm5IUpBjrmIrpnvVZDgS6m/view?usp=sharing">
                 <button className=' group text-white w-fit px-6 py-3 my-2
                 flex items-center rounded-md bg-gradient-to-r
                 from-cyan-500 to-blue-500 cursor-pointer
@@ -27,6 +27,7 @@ const Home = () => {
                     <HiArrowNarrowRight size={25}/>
                     </span>
                 </button>
+                
            </div>    
           </div>
            <div>
