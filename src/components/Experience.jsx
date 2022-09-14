@@ -71,7 +71,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-full  h-[50rem]"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-full  h-[60rem]"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
@@ -91,8 +91,18 @@ const Experience = () => {
               <p className="mt-4">{title}</p>
             </div>
           ))}
+         <div className=" justify-center text-center">
+         <div><h2 className="text-4xl font-bold  p-2 inline">Skills</h2></div>
+          <div className="text-2xl h-[10rem]">
+          <p>Frontend Developer</p>
+          <p>Full Stack Developer</p>
+          <p>Team Management</p>
+          <p>Time Management</p>
+          </div>
+         </div>
         </div>
       </div>
+      
     </div>
   );
 };
