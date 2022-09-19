@@ -22,10 +22,6 @@ const Navbar = () => {
             id:4,
             link:"contact"
         },
-        {
-            id:5,
-            link:"resume"
-        },
     ]
   return (
     <div className=' flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed '>
