@@ -3,6 +3,19 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import HeroImage from "../assets/heroimage.jpg";
 
 const Home = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          Resume
+        </>
+      ),
+      style: "rounded-br-md",
+      href: "/resume.pdf",
+      download: true,
+    },
+  ];
   return (
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black 
     via-black to-gray-800  '>
@@ -18,17 +31,21 @@ const Home = () => {
            during last week of a every unit using React-JS, Bootstrap, Chakra-UI and   
              CSS for frontend and Node.js, Express and MongoDB for backend. Interested for a position
            Software Developer to enhance my skills and to enhance the user experience.</p>
-           <div href="https://drive.google.com/file/d/1APXaOFoK6Tdm5IUpBjrmIrpnvVZDgS6m/view?usp=sharing">
+           {links.map((link) => (
+           <div key={link.id}>
                 <button className=' group text-white w-fit px-6 py-3 my-2
                 flex items-center rounded-md bg-gradient-to-r
                 from-cyan-500 to-blue-500 cursor-pointer 
-                '>Resume
+                'download={link.download}
+                target="_blank"
+                rel="noreferrer"
+                >{link.child}
                    <span className='group-hover:rotate-90 duration-300'>
                     <HiArrowNarrowRight size={25}/>
                     </span>
                 </button>
-                
-           </div>    
+           </div> 
+           ))}   
           </div>
            <div>
             <img
