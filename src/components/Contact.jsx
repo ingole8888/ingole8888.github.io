@@ -42,6 +42,7 @@ const Contact = () => {
             <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>
+            <div><h1>Email:ingole8888@gmail.com </h1><h1>Mob.: +91 9145638836</h1></div>
           </form>
         </div>
       </div>
