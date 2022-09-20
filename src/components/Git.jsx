@@ -31,6 +31,10 @@ return(
       hideColorLegend
       />
     </div>
+    <img className='w-2/3 m-auto mt-20'
+    src="https://camo.githubusercontent.com/1fd5c609de11707b720d3bea4e6a3b3d0e7072e3d094fb17c607be5fbbf23032/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d696e676f6c653838383826"
+    alt=""
+    />
     </div>
   </div>
 )  
