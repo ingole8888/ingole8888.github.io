@@ -70,7 +70,7 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
+      name="techstack"
       className="bg-gradient-to-b from-gray-800 to-black w-full
        h-full "
     >

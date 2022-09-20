@@ -1,5 +1,5 @@
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
+import Experience from "./components/Techstack";
 import { Showcase } from "./components/Git";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
