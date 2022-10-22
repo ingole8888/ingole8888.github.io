@@ -13,6 +13,7 @@ const Projects = () => {
       src: arrayDestruct,
       h1:"bathandbodyworks.com",
       p:"It's a home of bodycare products.(Personal project)",
+      techstack:"ReactJs, Bootstrap",
       netlify:"https://bathandbodyworks-com.vercel.app/",
       github:"https://github.com/ingole8888/colossal-dog-2458"
       
@@ -22,6 +23,7 @@ const Projects = () => {
       src: reactParallax,
       h1:"1mg.com",
       p:"It provide home delivery of all type medicine. (Personal project)",
+      techstack:"HTML, CSS and JS",
       netlify:"https://dashing-speculoos-367b00.netlify.app/",
       github:"https://github.com/ingole8888/cloneof1mg"
     },
@@ -30,6 +32,7 @@ const Projects = () => {
       src: navbar,
       h1:"shop.com",
       p:"American shopping website.(team project)",
+      techstack:"HTML, CSS and JS",
       netlify:"https://shop-com-clone-web17.netlify.app/",
       github:"https://github.com/mistrivishal/SHOP.COM-clone"
     },
@@ -38,6 +41,7 @@ const Projects = () => {
       src: reactSmooth,
       h1:"realme.com",
       p:"Popular mobile shopping website.(team project)",
+      techstack:"HTML, CSS and JS",
       netlify:"https://elegant-crisp-f2194d.netlify.app/",
       github:"https://github.com/prashant1307/redmi_clone"
     },
@@ -46,6 +50,7 @@ const Projects = () => {
       src: installNode,
       h1:"carbmanager.com",
       p:"Provides healthy diet plan to people.(Personal project)",
+      techstack:"ReactJs, Bootstrap",
       netlify:"https://fascinating-blini-865605.netlify.app/",
       github:"https://github.com/ingole8888/aquatic-slope-5169"
     },
@@ -54,6 +59,7 @@ const Projects = () => {
       src: reactWeather,
       h1:"youtube clone",
       p:"Added search and watch full length video. (Personal project)",
+      techstack:"HTML, CSS and JS",
       netlify:"https://exquisite-queijadas-78d64e.netlify.app/",
       github:"https://github.com/ingole8888/practice11/tree/master/ES6"
     },
@@ -86,6 +92,7 @@ const Projects = () => {
               />
               <h1 className=" text-2xl items-center justify-center m-4">{link.h1}</h1>
               <p className="items-center justify-center m-4">{link.p}</p>
+              <p className="items-center justify-center m-4">{link.techstack}</p>
               <div className="flex items-center justify-center">
                 
                 <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={()=>window.open(link.netlify,'_blank')}>
