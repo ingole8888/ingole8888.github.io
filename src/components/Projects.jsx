@@ -82,7 +82,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 justify-center">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-4 justify-center">
           {portfolios.map((link ) => (
             <div key={link.id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -95,11 +95,11 @@ const Projects = () => {
               <p className="items-center justify-center m-4">{link.techstack}</p>
               <div className="flex items-center justify-center">
                 
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={()=>window.open(link.netlify,'_blank')}>
+                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-md" onClick={()=>window.open(link.netlify,'_blank')}>
                   Demo
                 </button>
                 
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105" onClick={()=>window.open(link.github,'_blank')}>
+                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-md" onClick={()=>window.open(link.github,'_blank')}>
                   GitHub
                  </button>
                
