@@ -23,6 +23,19 @@ const Navbar = () => {
             link:"contact"
         },
     ]
+
+    const onButtonClick = () => {
+        fetch("Sunil-Ingole-Resume.pdf").then((response) => {
+          response.blob().then((blob) => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement("a");
+            alink.href = fileURL;
+            alink.download = "Sunil-Ingole-Resume.pdf";
+            alink.click();
+          });
+        });
+        window.open("https://drive.google.com/file/d/1APXaOFoK6Tdm5IUpBjrmIrpnvVZDgS6m/view?usp=sharing", '_blank');
+      };
   return (
     <div className=' flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed '>
         <div>
@@ -37,9 +50,12 @@ const Navbar = () => {
                   <Link to={link} smooth duration={500}>{link}</Link> 
             </li>
             ))}
-            <a href='/Sunil-Ingole-Resume.pdf' className="px-4 cursor-pointer capitalize 
+
+            <p onClick={onButtonClick} className="px-4 cursor-pointer capitalize 
             font-medium text-gray-500 hover:scale-105 
-            duration-200" download>Resume</a>
+            duration-200" download >Resume</p>
+
+
         </ul>
         <div onClick={()=>setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500 md:hidden'>
             {nav ? <FaTimes size={30}/>:<FaBars size={30}/>}

@@ -3,6 +3,20 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import HeroImage from "../assets/heroimage.jpg";
 
 const Home = () => {
+
+  const onButtonClick = () => {
+    fetch("Sunil-Ingole-Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Sunil-Ingole-Resume.pdf";
+        alink.click();
+      });
+    });
+    window.open("https://drive.google.com/file/d/1APXaOFoK6Tdm5IUpBjrmIrpnvVZDgS6m/view?usp=sharing", '_blank');
+  };
+
   return (
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black 
     via-black to-gray-800  '>
@@ -18,7 +32,7 @@ const Home = () => {
            during last week of a every unit using React-JS, Bootstrap, Chakra-UI and   
              CSS for frontend and Node.js, Express and MongoDB for backend. Interested for a position
            Software Developer to enhance my skills and to enhance the user experience.</p>
-           <a href= "/resume.pdf" download= "true"><button className=' group text-white w-fit px-6 py-3 my-2
+           <button onClick={onButtonClick} className=' group text-white w-fit px-6 py-3 my-2
                 flex items-center rounded-md bg-gradient-to-r
                 from-cyan-500 to-blue-500 cursor-pointer 
                 '
@@ -28,7 +42,7 @@ const Home = () => {
                    <span className='group-hover:rotate-90 duration-300'>
                     <HiArrowNarrowRight size={25}/>
                     </span>
-                </button></a>
+                </button>
           </div>
            <div>
             <img
