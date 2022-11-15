@@ -37,7 +37,7 @@ const Navbar = () => {
                   <Link to={link} smooth duration={500}>{link}</Link> 
             </li>
             ))}
-            <a href='/resume.pdf' className="px-4 cursor-pointer capitalize 
+            <a href='/Sunil-Ingole-Resume.pdf' className="px-4 cursor-pointer capitalize 
             font-medium text-gray-500 hover:scale-105 
             duration-200" download>Resume</a>
         </ul>

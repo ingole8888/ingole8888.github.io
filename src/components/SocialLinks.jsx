@@ -41,7 +41,7 @@ const SocialLinks = () => {
         </>
       ),
       style: "rounded-br-md",
-      href: "/resume.pdf",
+      href: "/Sunil-Ingole-Resume.pdf",
       download: true,
     },
   ];
