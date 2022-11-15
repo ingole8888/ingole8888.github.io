@@ -1,6 +1,5 @@
 import React from "react";
 
-import tailwind from "../assets/tailwind.png";
 
 const Tools = () => {
   const techs = [
