@@ -27,7 +27,7 @@ return(
     <div className='github_Calendar mt-20'>
       <GitHubCalendar style={{margin:"auto"}}
       username="ingole8888"
-      transformData={selectLastHalfYear}
+      //transformData={selectLastHalfYear}
       hideColorLegend
       />
     </div>
