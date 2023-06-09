@@ -22,6 +22,10 @@ const Navbar = () => {
             id:4,
             link:"contact"
         },
+        {
+            id:5,
+            link:"experience"
+        },
     ]
 
     const onButtonClick = () => {

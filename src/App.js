@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks"
 import Tools from "./components/Tools";
+import WorkingExp from "./components/WorkingExp";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
     <Tools/>
     <Projects/>
     <Showcase/>
+    <WorkingExp/>
     <Contact/>
     </>
   );
